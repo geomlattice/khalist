@@ -51,7 +51,7 @@ def process_posts():
 			minutes_total = int(lhour)*60 + int(lmin)
 			nadis = round(minutes_total / 24, 2)
 			byear, bmonth, bday = convertdate.bahai.from_gregorian(int(gyear), int(gmonth), int(gday))
-			nadistamp = str(nadis).replace(".","n") + "x" + str(bday) + str(bmonth) + str(bday) 
+			nadistamp = str(nadis).replace(".","n") + "x" + str(bday) + str(bmonth) + str(byear) 
 			marked_payload = ""
 			marked_payload += f'''# {nadis} Nadis {bday} {bmonth} {byear}\n\n'''
 			marked_payload += f'''{pseudo_post.content}\n'''
@@ -99,11 +99,11 @@ def process_posts():
 	mdblock_suffix = "-1"
 	for hl_ind, html_line in enumerate(html_lines):
 		if "<!--INJECT-->" in html_line:
-			mdblock_prefix = html_lines[:hl_ind-1]
-			mdblock_suffix = html_lines[hl_ind-1:]
+			mdblock_prefix = html_lines[:hl_ind+1]
+			mdblock_suffix = html_lines[hl_ind+1:]
 
 	mdlinks.reverse()
-	mdblock_payload = "\n\n".join([f'''<md-block src="{mdlink}"></md-block>''' for mdlink in mdlinks])
+	mdblock_payload = "\n\n" + "\n\n".join([f'''<md-block src="{mdlink}"></md-block>''' for mdlink in mdlinks])
 
 	index_construct = ""
 	index_construct += '\n'.join(mdblock_prefix)
