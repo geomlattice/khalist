@@ -1,6 +1,13 @@
 <html>
+<link rel="stylesheet" href="./data/main.css">
 <script type="module" src="https://md-block.verou.me/md-block.js"></script>
-<h1>PseudoSergius Posts</h1>
+<body>
+<div>
+<h2>PseudoSergius Posts</h2>
 <p>Posting is a fascinating form of microblogging. I find the aphorism to be interesting. I may not have understood it in any manner, yet I have taken to quite a practice</p>
+
+
 <!--INJECT-->
+</div>
+</body>
 </html>

@@ -102,6 +102,7 @@ def process_posts():
 			mdblock_prefix = html_lines[:hl_ind]
 			mdblock_suffix = html_lines[hl_ind:]
 
+	mdlinks.reverse()
 	mdblock_payload = "\n\n".join([f'''<md-block src="{mdlink}"></md-block>''' for mdlink in mdlinks])
 
 	index_construct = ""
@@ -227,7 +228,4 @@ div.navbardiv {{
     with open(css_filepath, "w") as css_out:
         css_out.write(css_payload)
 
-with open(sys.argv[1], 'r') as file:
-    config_data = json.load(file)
-	
 process_posts()
