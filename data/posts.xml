@@ -5,7 +5,8 @@
   <title>Posts</title>
   <link>https://geomlattice.github.io/khalist</link>
   <description>PseudoSergius Posts</description>
-  
+ 
+ 
   <item>
     <title>49n54x19419</title>
     <link>https://geomlattice.github.io/khalist/posts/49n54x19419.md</link>
@@ -51,6 +52,13 @@
   <item>
     <title>12n92x656</title>
     <link>https://geomlattice.github.io/khalist/posts/12n92x656.md</link>
+    <description>ReadingNote</description>
+  </item>
+
+ 
+  <item>
+    <title>14n46x656</title>
+    <link>https://geomlattice.github.io/khalist/posts/14n46x656.md</link>
     <description>ReadingNote</description>
   </item>
 
