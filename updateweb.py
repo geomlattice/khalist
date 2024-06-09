@@ -99,8 +99,8 @@ def process_posts():
 	mdblock_suffix = "-1"
 	for hl_ind, html_line in enumerate(html_lines):
 		if "<!--INJECT-->" in html_line:
-			mdblock_prefix = html_lines[:hl_ind]
-			mdblock_suffix = html_lines[hl_ind:]
+			mdblock_prefix = html_lines[:hl_ind-1]
+			mdblock_suffix = html_lines[hl_ind-1:]
 
 	mdlinks.reverse()
 	mdblock_payload = "\n\n".join([f'''<md-block src="{mdlink}"></md-block>''' for mdlink in mdlinks])
