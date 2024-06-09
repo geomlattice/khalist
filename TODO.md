@@ -5,7 +5,9 @@
 - [x] Make RSS injection schema (construct RSS with new post)
 - [x] Convert Posts to Markdown; link to this in RSS
 - [x] datetime of the posts in the bahai calendar with nadis
-- [ ] md-block posts with updateweb config index generation
+- [x] md-block posts with updateweb config index generation
+- [x] Add CascadiaCode
+- [ ] Add Spacing Between Posts to config.json
 
 ### Khalist 
 - [ ] Filter Tasks for those with date 
