@@ -32,6 +32,37 @@ def construct_css(config_path):
     bannerimg_width = config['css_config']['bannerimg_style']['width']
     bannerimg_height = config['css_config']['bannerimg_style']['height']
 
+    def add_font():
+         return f'''
+
+@font-face {{
+  font-family: "CascadiaCode";
+  src: url("../fonts/CascadiaCode-Regular.woff2") format('woff2');
+}}
+
+@font-face {{
+  font-family: "CascadiaCode";
+  src: url("../fonts/CascadiaCode-SemiBold.woff2") format('woff2');
+  font-weight: bold;
+}}
+
+@font-face {{
+  font-family: "CascadiaCode";
+  src: url("../fonts/CascadiaCode-SemiBoldItalic.woff2") format('woff2');
+  font-weight: bold;
+  font-style: italic;
+}}
+
+@font-face {{
+  font-family: "CascadiaCode";
+  src: url("../fonts/CascadiaCodeItalic.woff2") format('woff2');
+  font-style: italic;
+}}
+
+
+'''
+
+
     def style_body(body_font):
         return f'''
 body {{
@@ -109,6 +140,7 @@ div.navbardiv {{
     
     #Construct CSS Payload
     css_payload = ""
+    css_payload += add_font()
     css_payload += style_body(body_font)
     css_payload += style_p(p_align, p_fontsize, p_margin_left, p_margin_right)
     css_payload += style_h1(h1_align, h1_fontsize)

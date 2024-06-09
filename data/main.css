@@ -1,6 +1,31 @@
+@font-face {
+  font-family: "CascadiaCode";
+  src: url("../fonts/CascadiaCode-Regular.woff2") format('woff2');
+}
+
+@font-face {
+  font-family: "CascadiaCode";
+  src: url("../fonts/CascadiaCode-SemiBold.woff2") format('woff2');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "CascadiaCode";
+  src: url("../fonts/CascadiaCode-SemiBoldItalic.woff2") format('woff2');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "CascadiaCode";
+  src: url("../fonts/CascadiaCodeItalic.woff2") format('woff2');
+  font-style: italic;
+}
+
+
 
 body {
-    font-family: Verdana
+    font-family: CascadiaCode
 }
                 
 p {
