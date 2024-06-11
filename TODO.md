@@ -7,6 +7,7 @@
 - [x] datetime of the posts in the bahai calendar with nadis
 - [x] md-block posts with updateweb config index generation
 - [x] Add CascadiaCode
+- [ ] Delete Seen Comments from Todoist
 - [ ] Add Spacing Between Posts to config.json
 - [ ] Post from xonshrc alias
 - [ ] Add NavBar for Post Categories
