@@ -27,7 +27,8 @@
 
 
 body {
-    font-family: CascadiaCode
+    font-family: CascadiaCode;
+    word-wrap:break-word;
 }
                 
 p {
@@ -35,7 +36,6 @@ p {
     font-size: 1.2em;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 2em;
 }
 
                 

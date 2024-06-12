@@ -2,7 +2,8 @@
 "css_config": {
     "filepath": "./data/main.css",
     "body_style": {
-	"font-family": "CascadiaCode"
+	"font-family": "CascadiaCode",
+	"word-wrap": "break-word"
     },
     "p_style": {
 	"p_align": "left",

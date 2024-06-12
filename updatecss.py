@@ -9,6 +9,7 @@ def construct_css(config_path):
     css_filepath = config['css_config']['filepath']
 
     body_font = config['css_config']['body_style']['font-family']
+    body_wwrap = config['css_config']['body_style']['word-wrap']
 
     p_align = config['css_config']['p_style']['p_align']
     p_fontsize = config['css_config']['p_style']['p_fontsize']
@@ -63,10 +64,11 @@ def construct_css(config_path):
 '''
 
 
-    def style_body(body_font):
+    def style_body(body_font, body_wwrap):
         return f'''
 body {{
-    font-family: {body_font}
+    font-family: {body_font};
+    word-wrap:{body_wwrap};
 }}
                 '''
 
@@ -141,7 +143,7 @@ div.navbardiv {{
     #Construct CSS Payload
     css_payload = ""
     css_payload += add_font()
-    css_payload += style_body(body_font)
+    css_payload += style_body(body_font, body_wwrap)
     css_payload += style_p(p_align, p_fontsize, p_margin_left, p_margin_right)
     css_payload += style_h1(h1_align, h1_fontsize)
     css_payload += style_div(div_width, div_padding, div_margin)
