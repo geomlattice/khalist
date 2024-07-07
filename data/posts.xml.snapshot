@@ -5,7 +5,13 @@
   <title>Posts</title>
   <link>https://geomlattice.github.io/khalist</link>
   <description>PseudoSergius Posts</description>
- 
+  
+  <item>
+    <title>3n71x156181</title>
+    <link>https://geomlattice.github.io/khalist/posts/3n71x156181.md</link>
+    <description>ReadingNote</description>
+  </item>
+
 </channel>
 
 </rss>
