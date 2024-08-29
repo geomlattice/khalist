@@ -17,3 +17,5 @@
 ### Khalist 
 - [ ] Filter Tasks for those with date 
 - [ ] Enter khal calendar entry from task info
+
+- [ ] cli
